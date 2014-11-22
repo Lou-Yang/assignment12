@@ -12,8 +12,7 @@ body {
 
 header h1 {
   font-size: 70px;
-  font-family: "black arial", sans-serif;
-  color: #FFF; }
+  font-family: "black arial", sans-serif; }
 header h2 {
   font-size: 25px;
   font-weight: normal;
@@ -52,6 +51,7 @@ section h1 {
   color: #E74C3C;
   font-size: 70px;
   font-family: "black arial", sans-serif;
+  padding: 10px 0 10px 10px;
   clear: both; }
 section article {
   -webkit-border-radius: 30px;
