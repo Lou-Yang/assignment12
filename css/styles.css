@@ -10,4 +10,10 @@ body {
   font-size: 18px;
   color: #FFF; }
 
+img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
 /*# sourceMappingURL=styles.css.map */
