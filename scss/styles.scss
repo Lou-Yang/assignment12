@@ -25,8 +25,25 @@ header {
 	font-size: 25px;
 	font-weight: normal;
 	}
-	ul {
+
+	ul li {
+    display: block;
+    position: relative;
+    float: left;
 	padding: 50px 0;
+	@include border-radius (10px);
+	}
+	li ul {
+		display: none;
+	}
+	ul li a {
+		display: block;
+		text-decoration: none;
+		color: #2C3E50;
+		background-color: #2980B9;
+	}
+	ul li a:hover {
+		background: #FFF;
 	}
 }
 
@@ -37,6 +54,7 @@ section {
 	color: #E74C3C;
 	font-size: 70px;
 	font-family: $headerFont;
+	clear: both;
 	}
 	article {
 	@include border-radius;
