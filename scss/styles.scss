@@ -1,6 +1,6 @@
 
 @import "reset";
-@mixin border-radius($radius: 10px) {
+@mixin border-radius($radius: 30px) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
@@ -14,7 +14,19 @@ body {
 	font-size: 18px;
 	color: #FFF;
 }
-img {
+article {
 	@include border-radius;
-	
+	background-color: #2980B9;
+	margin: 50px 0;
+	padding: 50px;
+	img {
+	@include border-radius;
+	width: 100%;
+	display: block;
+    margin: auto;
+	}
+	ul, ol{
+	padding: 0 50px;
+	margin: 1em;
+	}
 }
