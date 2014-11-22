@@ -7,8 +7,16 @@ body {
   margin: 25px auto;
   width: 60%;
   font-family: "Times New Roman", serif;
-  font-size: 18px;
+  font-size: 20px;
   color: #FFF; }
+  body img {
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+    width: 100%;
+    display: block;
+    margin: auto; }
 
 header h1 {
   font-size: 70px;
@@ -17,18 +25,19 @@ header h2 {
   font-size: 25px;
   font-weight: normal;
   padding-top: 10px; }
-header ul {
+
+header nav ul {
   font-family: "black arial", sans-serif;
   font-size: 30px; }
-header ul li {
+header nav ul li {
   display: block;
   position: relative;
   float: left;
   padding: 50px 0;
   margin-right: 50px; }
-header li ul {
+header nav li ul {
   display: none; }
-header ul li a {
+header nav ul li a {
   display: block;
   text-decoration: none;
   color: #2C3E50;
@@ -39,7 +48,7 @@ header ul li a {
   border-radius: 10px;
   padding: 12px 10px;
   font-weight: bold; }
-header ul li a:hover {
+header nav ul li a:hover {
   background: #FFF; }
 
 section h1 {
@@ -61,14 +70,6 @@ section article {
   background-color: #2980B9;
   margin: 50px 0;
   padding: 50px; }
-  section article img {
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    border-radius: 30px;
-    width: 100%;
-    display: block;
-    margin: auto; }
   section article h2 {
     padding-top: 10px;
     font-size: 50px;

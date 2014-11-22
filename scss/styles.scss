@@ -1,6 +1,7 @@
 $headerFont: "black arial", sans-serif;
 $backgroundColor: #2980B9;
 $bgColorBlue: #2C3E50;
+$bgColorWhite: #FFF;
 $margin: 50px;
   
 
@@ -17,20 +18,27 @@ body {
 	margin: 25px auto;
 	width: 60%;
 	font-family: "Times New Roman", serif;
-	font-size: 18px;
-	color: #FFF;
+	font-size: 20px;
+	color: $bgColorWhite;
+	img {
+	@include border-radius;
+	width: 100%;
+	display: block;
+    margin: auto;
+	}
 }
 header {
 	h1 {
 	font-size: 70px;
 	font-family: $headerFont;
-	
 	}
 	h2 {
 	font-size: 25px;
 	font-weight: normal;
 	padding-top: 10px;
 	}
+}
+header nav {
 	ul {
 	font-family: $headerFont;
 	font-size: 30px;
@@ -39,7 +47,7 @@ header {
     display: block;
     position: relative;
     float: left;
-	padding: 50px 0;
+	padding: $margin 0;
 	margin-right: $margin;
 	}
 	li ul {
@@ -55,14 +63,14 @@ header {
 		font-weight: bold;
 	}
 	ul li a:hover {
-		background: #FFF;
+		background: $bgColorWhite;
 	}
 }
 
 section {
 	h1 {
 	@include border-radius (10px);
-	background-color: #FFF;
+	background-color: $bgColorWhite;
 	color: #E74C3C;
 	font-size: 70px;
 	font-family: $headerFont;
@@ -73,13 +81,7 @@ section {
 	@include border-radius;
 	background-color: $backgroundColor;
 	margin: $margin 0;
-	padding: 50px;
-	img {
-	@include border-radius;
-	width: 100%;
-	display: block;
-    margin: auto;
-	}
+	padding: $margin;
 	h2 {
 	padding-top: 10px;
 	font-size: 50px;
@@ -90,7 +92,7 @@ section {
 	font-size: 25px;
 	}
 	ul, ol{
-	padding: 0 50px;
+	padding: 0 $margin;
 	margin: 1em;
 	}
 }
@@ -122,7 +124,7 @@ footer {
 	ul li a {
 		display: block;
 		text-decoration: none;
-		color: #FFF;
+		color: $bgColorWhite;
 	}
 	ul li a:hover {
 		color: $backgroundColor;
