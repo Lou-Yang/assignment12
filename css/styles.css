@@ -80,4 +80,30 @@ section article {
     padding: 0 50px;
     margin: 1em; }
 
+footer {
+  font-family: "black arial", sans-serif; }
+  footer h1 {
+    font-size: 18px;
+    float: left;
+    margin-right: 10px; }
+  footer h2 {
+    font-size: 18px;
+    font-weight: normal;
+    float: left; }
+  footer ul {
+    float: left; }
+  footer ul li {
+    display: block;
+    position: relative;
+    float: left;
+    margin: 0 20px; }
+  footer li ul {
+    display: none; }
+  footer ul li a {
+    display: block;
+    text-decoration: none;
+    color: #FFF; }
+  footer ul li a:hover {
+    color: #2980B9; }
+
 /*# sourceMappingURL=styles.css.map */
