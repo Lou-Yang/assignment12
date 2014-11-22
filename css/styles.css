@@ -16,23 +16,30 @@ header h1 {
   color: #FFF; }
 header h2 {
   font-size: 25px;
-  font-weight: normal; }
+  font-weight: normal;
+  padding-top: 10px; }
+header ul {
+  font-family: "black arial", sans-serif;
+  font-size: 30px; }
 header ul li {
   display: block;
   position: relative;
   float: left;
   padding: 50px 0;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px; }
+  margin-right: 50px; }
 header li ul {
   display: none; }
 header ul li a {
   display: block;
   text-decoration: none;
   color: #2C3E50;
-  background-color: #2980B9; }
+  background-color: #2980B9;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  padding: 12px 10px;
+  font-weight: bold; }
 header ul li a:hover {
   background: #FFF; }
 
